@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Black: #000;
+    
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--Black);
+    font-size: 1.8rem;
+}
+
+body, html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--DarkBlue-2);
+    margin: 0 auto;
+    list-style-type: none;
+    max-width: 1440px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-size: 3.2rem;
+}
+
+/* --------------- SECTION TOP --------------- */
+.top {
+    background-color: var(--White);
+    position: relative;
+    max-width: 1440px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15rem;
+}
+
+.top ul {
+    display: flex;
+}
+
+.top ul li a {
+    color: var(--GrayishBlue);
+    padding: 1.5rem 1rem;
+}
+
+.top ul li a:hover {
+    color: var(--Black);
+    border-bottom: 5px solid var(--LimeGreen);
+    border-image: linear-gradient(to right, var(--LimeGreen), var(--Bright-Cyan));
+    border-image-slice: 1;
+}
+
+.button {
+    color: var(--White);
+    background-image: linear-gradient(to right, var(--LimeGreen), var(--Bright-Cyan));
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+
+.button:hover {
+    opacity: .75;
+}
+
+/* --------------- SECTION ILLUSTRATION --------------- */
+
+
+.illustration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15rem;
+}
+
+.illustration h2 {
+    font-weight: 500;
+    font-size: 4.0rem;
+}
+
+.illustration p {
+    margin: 1.5rem 0 3.5rem 0;
+    color: var(--GrayishBlue);
+}
+
+.background {
+    background-image: url(images/bg-intro-desktop.svg);
+    background-position: 5% 110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: -7rem;
+
+}
+
+.background img {
+    width: 115%;
+    margin-right: 120rem;
+    padding-left: 15rem;
+    overflow: hidden;
+}
+
