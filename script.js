@@ -5,6 +5,19 @@ burger_navigation = document.querySelector(".burger-navigation")
 menu_desktop = document.querySelector(".top nav")
 menu_desktop_btn = document.querySelector(".top a.button")
 
+moon = document.querySelector("#moon")
+sun = document.querySelector("#sun")
+
+moon.addEventListener("click", () => {
+    document.body.style.setProperty('--Black', '#FFF');
+    document.body.style.setProperty('--White', '#181719');
+})
+sun.addEventListener("click", () => {
+    document.body.style.setProperty('--Black', '#181719');
+    document.body.style.setProperty('--White', '#FFF');
+})
+
+
 
 burger_icon.addEventListener("click", () => {
     burger_svg = document.querySelector(".burger-icon svg.icon")

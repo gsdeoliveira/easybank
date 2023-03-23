@@ -4,12 +4,12 @@
     --DarkBlue: hsl(233, 26%, 24%);
     --LimeGreen: hsl(136, 65%, 51%);
     --Bright-Cyan: hsl(192, 70%, 51%);
-    --Black: #000;
+    --Black: #FFF;
     
     --GrayishBlue: hsl(233, 8%, 62%);
     --LightGrayishBlue: hsl(220, 16%, 96%);
     --VeryLightGray: hsl(0, 0%, 98%);
-    --White: hsl(0, 0%, 100%);
+    --White: #181719;
     
 }
 
@@ -30,7 +30,7 @@ body, html {
 }
 
 body {
-    background-color: var(--DarkBlue-2);
+    background-color: var(--White);
     margin: 0 auto;
     list-style-type: none;
     max-width: 1440px;
@@ -52,6 +52,12 @@ h1, h2, h3 {
     align-items: center;
     padding: 1rem 15rem;
 }
+
+.top .logo .color{
+    fill: var(--Black);
+}
+
+
 
 .top ul {
     display: flex;
@@ -202,7 +208,7 @@ h1, h2, h3 {
 }
 
 footer a {
-    color: var(--White);
+    color: #FFF;
 }
 
 footer p {
@@ -331,7 +337,7 @@ footer ul li a:hover {
     }
 
     .burger-container {
-        background-color: var(--Black);
+        background-color: #000;
         width: 100vw;
         height: 100vh;
         opacity: 0;
@@ -352,9 +358,21 @@ footer ul li a:hover {
         left: 6vw;
     }
 
+    .burger-icon svg g {
+        fill: var(--Black);
+    }
+
     .burger-navigation ul {
         flex-direction: column;
         align-self: center;
+    }
+
+    .burger-navigation ul li:last-child {
+        text-align: center;
+    }
+
+    .burger-navigation ul li:last-child i {
+    padding: 0 1rem;
     }
 
     .burger-navigation ul li a {
