@@ -7,12 +7,23 @@ menu_desktop_btn = document.querySelector(".top a.button")
 
 moon = document.querySelector("#moon")
 sun = document.querySelector("#sun")
+moon_desktop = document.querySelector("#moon-desktop")
+sun_desktop = document.querySelector("#sun-desktop")
 
 moon.addEventListener("click", () => {
     document.body.style.setProperty('--Black', '#FFF');
     document.body.style.setProperty('--White', '#181719');
 })
 sun.addEventListener("click", () => {
+    document.body.style.setProperty('--Black', '#181719');
+    document.body.style.setProperty('--White', '#FFF');
+})
+
+moon_desktop.addEventListener("click", () => {
+    document.body.style.setProperty('--Black', '#FFF');
+    document.body.style.setProperty('--White', '#181719');
+})
+sun_desktop.addEventListener("click", () => {
     document.body.style.setProperty('--Black', '#181719');
     document.body.style.setProperty('--White', '#FFF');
 })

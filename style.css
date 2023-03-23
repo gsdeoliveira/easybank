@@ -57,10 +57,25 @@ h1, h2, h3 {
     fill: var(--Black);
 }
 
-
+#moon-desktop {
+    margin-left: 0rem;
+}
 
 .top ul {
     display: flex;
+}
+
+#dark-light-mode {
+    position: absolute;
+    left: 1rem;
+}
+
+.top nav ul li:last-child {
+    text-align: center;
+}
+
+.top nav ul li:last-child i {
+padding: 0 .5rem;
 }
 
 .top ul li a {
@@ -330,6 +345,10 @@ footer ul li a:hover {
         align-items: center;
         position: sticky;
         top: 0;
+    }
+
+    #dark-light-mode {
+        display: none;
     }
 
     .burger-menu {
