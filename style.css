@@ -257,6 +257,10 @@ footer ul li a:hover {
     .illustration {
         padding-left: 10rem;
     }
+
+    .illustration h2, .illustration p {
+        padding: 1rem 10rem;
+    }
     /* --------------- SECTION ADVANTAGES --------------- */
     .advantages-grid {
         gap: 5rem;
@@ -270,6 +274,7 @@ footer ul li a:hover {
     .advantages .primeira, .advantages-grid div {
         text-align: center;
     }
+
     
 /* --------------- SECTION ARTICLES --------------- */
     .articles-grid {
@@ -296,6 +301,10 @@ footer ul li a:hover {
         padding-left: 5rem;
     }
 
+    .illustration h2, .illustration p {
+        padding: 1rem 5rem;
+    }
+
     /* --------------- SECTION ADVANTAGES --------------- */
     
     
@@ -311,9 +320,52 @@ footer ul li a:hover {
         display: none;
     }
 
+    .top {
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+
     .burger-menu {
         display: block;
     }
+
+    .burger-container {
+        background-color: var(--Black);
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 5.85rem;
+    }
+    
+    .burger-navigation {
+        border-radius: 5px;
+        background-color: var(--White);
+        width: 87.5vw;
+        height: 50vh;
+        position: absolute;
+        display: none;
+        justify-content: center;
+        top: 10vh;
+        left: 6vw;
+    }
+
+    .burger-navigation ul {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .burger-navigation ul li a {
+        display: block;
+        font-size: 2.4rem;
+        color: var(--Black);
+        text-align: center;
+        padding: 1rem 3rem;
+    }
+
+
 
     /* --------------- SECTION ILLUSTRATION --------------- */
     .illustration {
@@ -382,6 +434,14 @@ footer ul li a:hover {
         margin: 2rem 0;
     }
 
+    .first-ul {
+        margin-bottom: 0;
+    }
+
+    .second-ul {
+        margin-top: 0;
+    }
+
     .footer p {
         margin-top: 4rem;
     }
@@ -400,5 +460,18 @@ footer ul li a:hover {
     html, body {
         font-size: 50%;
     }
+
+    .illustration h2, .illustration p {
+        padding: 1rem 3rem;
+    }
+
+    .articles, .advantages, .top {
+        padding: 1rem 3rem;
+    }
+
+    .footer {
+        padding: 3rem 3rem;
+    }
+
 
 }
